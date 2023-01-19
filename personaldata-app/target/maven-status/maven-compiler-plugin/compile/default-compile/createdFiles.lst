@@ -1,0 +1,6 @@
+org\comedy\app\controller\mapper\SubscriberMapper.class
+org\comedy\app\controller\data\SubscribeRequest.class
+org\comedy\app\controller\configuration\AppConfiguration.class
+org\comedy\app\controller\UserController.class
+org\comedy\app\App.class
+org\comedy\app\controller\mapper\SubscriberMapperImpl.class

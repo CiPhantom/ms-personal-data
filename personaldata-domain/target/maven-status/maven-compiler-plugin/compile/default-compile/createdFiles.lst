@@ -1,0 +1,7 @@
+org\comedy\domain\data\Subscriber.class
+org\comedy\domain\service\impl\AuthenticationDomainService.class
+org\comedy\domain\data\Country.class
+org\comedy\domain\service\AuthenticationService.class
+org\comedy\domain\spi\CountrySPI.class
+org\comedy\domain\spi\AuthenticationSPI.class
+org\comedy\domain\configuration\DomainConfiguration.class

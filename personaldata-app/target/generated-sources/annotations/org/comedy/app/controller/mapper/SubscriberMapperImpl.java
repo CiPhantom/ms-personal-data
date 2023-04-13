@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-01-18T21:28:34+0100",
+    date = "2023-04-13T20:25:16+0200",
     comments = "version: 1.5.3.Final, compiler: javac, environment: Java 19.0.1 (Oracle Corporation)"
 )
 @Component
@@ -19,19 +19,19 @@ public class SubscriberMapperImpl implements SubscriberMapper {
             return null;
         }
 
-        Subscriber subscriber = new Subscriber();
+        Subscriber.SubscriberBuilder subscriber = Subscriber.builder();
 
-        subscriber.setLogin( subscribeRequest.getLogin() );
-        subscriber.setPassword( subscribeRequest.getPassword() );
-        subscriber.setFirstname( subscribeRequest.getFirstname() );
-        subscriber.setLastname( subscribeRequest.getLastname() );
-        subscriber.setBirthday( subscribeRequest.getBirthday() );
-        subscriber.setBirthCountry( subscribeRequest.getBirthCountry() );
-        subscriber.setEmail( subscribeRequest.getEmail() );
-        subscriber.setBiography( subscribeRequest.getBiography() );
-        subscriber.setExpertise( subscribeRequest.getExpertise() );
+        subscriber.login( subscribeRequest.getLogin() );
+        subscriber.password( subscribeRequest.getPassword() );
+        subscriber.firstname( subscribeRequest.getFirstname() );
+        subscriber.lastname( subscribeRequest.getLastname() );
+        subscriber.birthday( subscribeRequest.getBirthday() );
+        subscriber.birthCountry( subscribeRequest.getBirthCountry() );
+        subscriber.email( subscribeRequest.getEmail() );
+        subscriber.biography( subscribeRequest.getBiography() );
+        subscriber.expertise( subscribeRequest.getExpertise() );
 
-        return subscriber;
+        return subscriber.build();
     }
 
     @Override

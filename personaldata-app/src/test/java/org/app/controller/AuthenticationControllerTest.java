@@ -45,7 +45,7 @@ public class AuthenticationControllerTest {
     @Test
     void userSubscribe_WhenAuthenticationServiceOk_ThenAllOk() throws CountryNotFoundException {
         var subscribeRequest = new SubscribeRequest();
-        var subscriber = new Subscriber();
+        var subscriber = Subscriber.builder().build();
         when(authenticationService.subscribe(subscriber)).thenReturn(subscriber);
         when(subscriberMapper.map(subscriber)).thenReturn(subscribeRequest);
         when(subscriberMapper.map(subscribeRequest)).thenReturn(subscriber);

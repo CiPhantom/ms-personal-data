@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2023-01-18T21:28:32+0100",
+    date = "2023-04-13T20:25:14+0200",
     comments = "version: 1.5.3.Final, compiler: javac, environment: Java 19.0.1 (Oracle Corporation)"
 )
 @Component
@@ -19,18 +19,18 @@ public class UserEntityMapperImpl implements UserEntityMapper {
             return null;
         }
 
-        Subscriber subscriber = new Subscriber();
+        Subscriber.SubscriberBuilder subscriber = Subscriber.builder();
 
-        subscriber.setLogin( userEntity.getLogin() );
-        subscriber.setPassword( userEntity.getPassword() );
-        subscriber.setFirstname( userEntity.getFirstname() );
-        subscriber.setLastname( userEntity.getLastname() );
-        subscriber.setBirthday( userEntity.getBirthday() );
-        subscriber.setEmail( userEntity.getEmail() );
-        subscriber.setBiography( userEntity.getBiography() );
-        subscriber.setExpertise( userEntity.getExpertise() );
+        subscriber.login( userEntity.getLogin() );
+        subscriber.password( userEntity.getPassword() );
+        subscriber.firstname( userEntity.getFirstname() );
+        subscriber.lastname( userEntity.getLastname() );
+        subscriber.birthday( userEntity.getBirthday() );
+        subscriber.email( userEntity.getEmail() );
+        subscriber.biography( userEntity.getBiography() );
+        subscriber.expertise( userEntity.getExpertise() );
 
-        return subscriber;
+        return subscriber.build();
     }
 
     @Override

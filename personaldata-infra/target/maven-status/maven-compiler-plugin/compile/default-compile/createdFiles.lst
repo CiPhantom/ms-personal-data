@@ -1,12 +1,13 @@
-org\comedy\infra\mapper\CountryEntityMapperImpl.class
 org\comedy\infra\mapper\UserEntityMapperImpl.class
+org\comedy\infra\service\SaltingPasswordComponent.class
+org\comedy\infra\entity\UserEntity.class
+org\comedy\infra\configuration\DatabaseConfiguration.class
+org\comedy\infra\service\AuthenticationInfraService.class
+org\comedy\infra\mapper\CountryEntityMapperImpl.class
 org\comedy\infra\service\CountryInfraService.class
 org\comedy\infra\mapper\CountryEntityMapper.class
 org\comedy\infra\repository\UserRepository.class
-org\comedy\infra\entity\UserEntity.class
 org\comedy\infra\entity\CountryEntity.class
-org\comedy\infra\configuration\DatabaseConfiguration.class
 org\comedy\infra\configuration\InfraConfiguration.class
 org\comedy\infra\repository\CountryRepository.class
-org\comedy\infra\service\AuthenticationInfraService.class
 org\comedy\infra\mapper\UserEntityMapper.class

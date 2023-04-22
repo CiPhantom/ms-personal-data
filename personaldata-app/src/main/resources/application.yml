@@ -1,4 +1,13 @@
 spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: 896026d7cfdbb0528b8e
+            clientSecret: 12832530df918bbf85fdc996d7d90292ae86e0c2
+            redirect-uri: ${front_url:http://localhost:4200}
+  
   application:
     name: ArtNetwork
   datasource:
